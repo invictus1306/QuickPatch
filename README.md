@@ -50,7 +50,8 @@ gdb>  help memory_patch
     gdb> memory_patch "xor rax,rax;nop" 0x400123
     gdb> memory_patch "0x90,0x90" 0x400123
 gdb> help get_bytes
- Get the instruction opcodes -> e.g. get_bytes "xor rax,rax;nop"
+ Get the instruction opcodes -> get_bytes <instructions> e.g.
+    gdb> get_bytes "xor rax,rax;nop"
 ```
 
 ### From command line
